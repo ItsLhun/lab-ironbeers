@@ -1,8 +1,18 @@
 <div class='beer-wrap' isRandom={{@root.isRandom}}>
   {{#unless @root.isRandom}}
+  {{#unless @root.isSingle}}
+  <a href="/beers/beer-{{this.id}}" class="beer-wrap">
+    {{/unless}}
+    {{/unless}}
+  {{#unless @root.isRandom}}
+  {{#unless @root.isSingle}}
     <img class='beer-img' src={{this.image_url}} alt='' />
+  {{/unless}}
   {{/unless}}
   <h4 class='beer-title'>{{this.name}}</h4>
   <p class='beer-tagline'>{{this.tagline}}</p>
   <p class='beer-description'>{{this.description}}</p>
+  {{#unless @root.isRandom}}
+  </a>
+  {{/unless}}
 </div>

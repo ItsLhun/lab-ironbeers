@@ -69,11 +69,21 @@ nav a {
   max-width: 28rem;
   max-height: 40rem;
 }
-.beer-wrap img,
-.random-beer-image {
+.beer-wrap a {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+  height: 100%;
+  width: 100%;
+}
+.beer-img,
+.full-beer-image {
   display: block;
   max-height: 50%;
   object-fit: contain;
+}
+.beer-img {
+  margin: 1em auto;
 }
 .beer-title {
   font-size: 1.3rem;
@@ -83,19 +93,19 @@ nav a {
   color: #bfbfbf;
   margin-bottom: 1rem;
 }
-.random-holding {
+.full-holding {
   flex-direction: column;
   max-width: 50rem;
 }
 .d-none {
   display: none;
 }
-.random-beer-holding {
+.full-beer-holding {
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
 }
-.random-beer-img {
+.full-beer-img {
   height: 30rem;
   padding: 5rem;
 }
@@ -111,7 +121,7 @@ ul li:first-of-type {
 ul li:last-child {
   margin-bottom: 0.2rem;
 }
-.random-beer-holding .beer-tagline {
+.full-beer-holding .beer-tagline {
   margin: 1rem 0;
 }
 div[isRandom='true'].beer-wrap {
